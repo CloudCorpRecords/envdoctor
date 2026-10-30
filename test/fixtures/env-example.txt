@@ -1,0 +1,8 @@
+# Example env file used by the parse tests. Names only matter here.
+API_KEY=placeholder
+export DATABASE_URL=postgres://localhost/example
+EMPTY_VALUE=
+TOKEN_WITH_EQUALS=abc=def=ghi
+
+# A comment line
+SPACED_KEY = spaced value

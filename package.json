@@ -1,0 +1,41 @@
+{
+  "bin": {
+    "envdoctor": "dist/cli.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1",
+    "zod": "^3"
+  },
+  "description": "Local environment doctor for a repo: node version against engines, git present, package manager lockfile present, .env present when .env.example exists (names only, values never read), and required tools on PATH, each pass or fail with the fix named.",
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "server.json"
+  ],
+  "homepage": "https://github.com/CloudCorpRecords/envdoctor#readme",
+  "license": "MIT",
+  "mcpName": "io.github.CloudCorpRecords/envdoctor",
+  "name": "@reneturcios/envdoctor",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCorpRecords/envdoctor.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}
